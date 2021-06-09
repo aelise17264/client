@@ -5,8 +5,9 @@ import axios from 'axios';
 //if we return a function it will be automatically called w/ a dispatch function
 //Redux promise has to return a promise, thunk we can return whatever we want
     
-export const signup = (formProps) => (dispatch) => {
-    axios.post('http://localhost:4000/signup', formProps);
-        
+export const signup = (formProps) => async dispatch => {
+    const response = await axios.post('http://localhost:4000/signup', formProps);
+
+    dispatch({type: AUTH_USER, payload: response.data.token});
 
 };
