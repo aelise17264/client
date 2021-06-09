@@ -5,10 +5,10 @@ class Header extends Component {
     render(){
         return(
             <div>
-                <Link to="/">Redux Auth</Link>
+                <Link to="/">Redux App</Link>
                 <Link to="/signin">Sign In</Link>
-                <Link to="/sinup">Sign Up</Link>                <Link to="/">Redux Auth</Link>
-                <Link to="/signout">Sign Out</Link>                <Link to="/">Redux Auth</Link>
+                <Link to="/sinup">Sign Up</Link>                
+                <Link to="/signout">Sign Out</Link>                
                 <Link to="/feature">Feature</Link>
 
             </div>
