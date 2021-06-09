@@ -17,3 +17,13 @@ export const signup = (formProps, cb) => async dispatch => {
         dispatch({type: AUTH_ERROR, payload: 'This email already exists'})
     }
 };
+
+
+export const signout = () => {
+    localStorage.removeItem('token');
+    
+    return{
+        type: AUTH_USER,
+        payload: ''
+    }
+}
