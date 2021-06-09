@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {reduxForm, Fiels, Field} from 'redux-form';
+import {reduxForm, Field} from 'redux-form';
 
 class Signup extends Component{
 
